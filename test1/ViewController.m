@@ -29,7 +29,7 @@
     }
     [self creatBtn];
 //    NSLog(@"%s",[_arrayData objectAtIndex:2]);
-//    [_tableview reloadData];
+    [_tableview reloadData];
 }
 
 -(void) creatBtn{
@@ -77,11 +77,15 @@
 - (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath{
     return UITableViewCellEditingStyleDelete;
 }
-
-
-//segue跳转
-
-
+//滑动触发动作
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+    [_arrayData removeObjectAtIndex:indexPath.row];
+    [_tableview reloadData];
+}
+//选中单元格触发的动作
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+}
 
 
 
