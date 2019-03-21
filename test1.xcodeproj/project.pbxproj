@@ -15,6 +15,7 @@
 		2C1D72F5223CA6760056736B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1D72F4223CA6760056736B /* main.m */; };
 		2C1D72FF223CA6760056736B /* test1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1D72FE223CA6760056736B /* test1Tests.m */; };
 		2C1D730A223CA6760056736B /* test1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1D7309223CA6760056736B /* test1UITests.m */; };
+		CEA6407B224389F700B16A84 /* newTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA6407A224389F700B16A84 /* newTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		2C1D7305223CA6760056736B /* test1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = test1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C1D7309223CA6760056736B /* test1UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = test1UITests.m; sourceTree = "<group>"; };
 		2C1D730B223CA6760056736B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA64079224389F700B16A84 /* newTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = newTableViewCell.h; sourceTree = "<group>"; };
+		CEA6407A224389F700B16A84 /* newTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = newTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 		2C1D72E4223CA6710056736B /* test1 */ = {
 			isa = PBXGroup;
 			children = (
+				CEA64079224389F700B16A84 /* newTableViewCell.h */,
+				CEA6407A224389F700B16A84 /* newTableViewCell.m */,
 				2C1D72E5223CA6710056736B /* AppDelegate.h */,
 				2C1D72E6223CA6710056736B /* AppDelegate.m */,
 				2C1D72E8223CA6710056736B /* ViewController.h */,
@@ -264,6 +269,7 @@
 			files = (
 				2C1D72EA223CA6710056736B /* ViewController.m in Sources */,
 				2C1D72F5223CA6760056736B /* main.m in Sources */,
+				CEA6407B224389F700B16A84 /* newTableViewCell.m in Sources */,
 				2C1D72E7223CA6710056736B /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

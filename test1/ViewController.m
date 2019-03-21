@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "newTableViewCell.h"
 
 @interface ViewController ()
 
@@ -37,6 +38,7 @@
     _btnEdit=[[UIBarButtonItem alloc] initWithTitle:@"编辑" style:UIBarButtonItemStylePlain target:self action:@selector(pressEdit)];
     _btnDone=[[UIBarButtonItem alloc] initWithTitle:@"完成" style:UIBarButtonItemStylePlain target:self action:@selector(pressDone)];
     _btnDelete=[[UIBarButtonItem alloc] initWithTitle:@"删除" style:UIBarButtonItemStylePlain target:self action:@selector(pressDelete)];
+    self.navigationItem.rightBarButtonItem = _btnEdit;
 }
 -(void) pressEdit{
     _isEdit=YES;
@@ -63,13 +65,18 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     NSString *str=@"cell";
     //获得可复用的单元格
-    UITableViewCell* strCell=[_tableview dequeueReusableCellWithIdentifier:str];
-    if(strCell==nil){
-        strCell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:str];
-    }
-    NSString* contain=[NSString stringWithFormat:@"第%d行,第%d组",indexPath.row,indexPath.section];
-    strCell.textLabel.text=[_arrayData objectAtIndex:indexPath.row];  //可以换成其他数据源,以数组的形式
-    return strCell;
+//    UITableViewCell* strCell=[_tableview dequeueReusableCellWithIdentifier:str];
+//    if(strCell==nil){
+//        strCell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:str];
+//    }
+//    NSString* contain=[NSString stringWithFormat:@"第%d行,第%d组",indexPath.row,indexPath.section];
+//    strCell.textLabel.text=[_arrayData objectAtIndex:indexPath.row];  //可以换成其他数据源,以数组的形式
+//    return strCell;
+        [tableView registerClass:[newTableViewCell class] forCellReuseIdentifier:@"cell"];
+        newTableViewCell *cell = [_tableview dequeueReusableCellWithIdentifier:@"cell"];
+    
+    cell.label.text = @"1234";
+    return cell;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 150;
