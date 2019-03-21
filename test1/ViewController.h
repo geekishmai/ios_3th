@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
+<UITableViewDataSource,UITableViewDelegate>
+{
+    UITableView* _tableview;
+}
 
 @end
 
