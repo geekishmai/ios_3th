@@ -12,6 +12,11 @@
 <UITableViewDataSource,UITableViewDelegate>
 {
     UITableView* _tableview;
+    NSMutableArray *_arrayData;
+    UIBarButtonItem *_btnEdit;
+    UIBarButtonItem* _btnDelete;
+    UIBarButtonItem* _btnDone;
+    bool _isEdit;
 }
 
 @end

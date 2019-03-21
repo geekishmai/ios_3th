@@ -105,10 +105,10 @@
 				2C1D72E6223CA6710056736B /* AppDelegate.m */,
 				2C1D72E8223CA6710056736B /* ViewController.h */,
 				2C1D72E9223CA6710056736B /* ViewController.m */,
-				2C1D72EB223CA6710056736B /* Main.storyboard */,
 				2C1D72EE223CA6760056736B /* Assets.xcassets */,
 				2C1D72F0223CA6760056736B /* LaunchScreen.storyboard */,
 				2C1D72F3223CA6760056736B /* Info.plist */,
+				2C1D72EB223CA6710056736B /* Main.storyboard */,
 				2C1D72F4223CA6760056736B /* main.m */,
 			);
 			path = test1;
